@@ -4,6 +4,7 @@ angular.module('regForm')
 
   var currentLanguage = null;
   var allLanguages = {};
+  $rootScope.selectedLangauge;
 
   function loadLanguage(language) {
     language = language.toLowerCase();
@@ -19,6 +20,7 @@ angular.module('regForm')
     }).then(function successCallback(response) {
       allLanguages = response.data;
       currentLanguage = allLanguages[language] || allLanguages['en-us'];
+      $rootScope.selectedLangauge = language;
       $rootScope.$broadcast('languageSet');
       return {allLanguages: allLanguages, currentLanguage: currentLanguage};
     }, function errorCallback(response) {

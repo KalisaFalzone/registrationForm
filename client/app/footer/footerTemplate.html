@@ -5,8 +5,8 @@
         <hr>
         <div>
         Terms • Privacy • Careers • Help •
-        <span ng-click="changeLanguage('ja')">Japanese<span>
-        <span ng-if="currentLanguage==='en-us'" ng-click="changeLanguage('en-us')">English<span>
+        <span ng-if="selectedLanguage !== 'ja'" ng-click="changeLanguage('ja')">Japanese<span>
+        <span ng-if="selectedLanguage ==='ja'" ng-click="changeLanguage('en-us')">English<span>
         </div>
     </div>
 </div>
