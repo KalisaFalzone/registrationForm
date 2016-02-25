@@ -1,7 +1,7 @@
 <div>
-  <div class="registerNow">Register Now!</div>
-  <div class="instructions">Please fill out this form to register for an account.</div>
-  <div class="req">All fields are required.</div>
+  <div class="registerNow">{{ currentLanguage.register_now }}</div>
+  <div class="instructions">{{ currentLanguage.please }}</div>
+  <div class="req">{{ currentLanguage.required }}</div>
   <br>
 
   <div class="field-description">{{ currentLanguage.first_name }}</div>
@@ -22,16 +22,16 @@
   </form>
   <br>
 
-  <div class="field-description">Password</div>
+  <div class="field-description">{{ currentLanguage.password }}</div>
   <form>
       <div class="form-border">
-        <input type="text" placeholder="Password" class="form-input">
+        <input type="text" placeholder="{{ currentLanguage.password }}" class="form-input">
         </input>
       </div>
   </form>
   <br>
 
-  <div class="field-description">Country</div>
+  <div class="field-description">{{ currentLanguage.country }}</div>
   <form>
       <div class="form-border">
         <input type="text" placeholder="USA" class="form-input">
@@ -40,10 +40,10 @@
   </form>
   <br>
 
-  <div class="field-description">Comments</div>
+  <div class="field-description">{{ currentLanguage.comments }}</div>
   <form>
       <div class="form-border">
-        <input type="text" placeholder="Comments" class="form-input">
+        <input type="text" placeholder="{{ currentLanguage.comments }}" class="form-input">
         </input>
       </div>
   </form>
@@ -54,13 +54,13 @@
         <span ng-if="checked"><image class="checkbox-image" src=images/checkbox.png ng-click="switchCheck()"></span>
         <span ng-if="!checked"><image class="checkbox-image" src=images/unchecked.png ng-click="switchCheck()"></span>
   </label>
-      <span class="field-description" id="agree">I agree to the terms and conditions.
+      <span class="field-description" id="agree">{{ currentLanguage.terms }}
       </span>
   <br>
   <br>
   <div class="button-container">
-      <span class="button" id="#cancel-button">Cancel</span>
-      <span class="button" id="register-button">Register</span>
+      <span class="button" id="#cancel-button">{{ currentLanguage.comments }}</span>
+      <span class="button" id="register-button">{{ currentLanguage.register }}</span>
   </div>
   <br>
   <br>

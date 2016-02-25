@@ -1,10 +1,33 @@
 {
   "en-us": {
+    "register_now": "Register Now!",
+    "please": "Please fill out this form to register for an account.",
+    "required": "All fields are required.",
     "first_name": "First Name",
-    "last_name": "Last Name"
+    "last_name": "Last Name",
+    "password": "Password",
+    "country": "Country",
+    "comments": "Comments",
+    "terms": "I agree to the terms and conditions.",
+    "cancel": "Cancel",
+    "register": "Register",
+    "footer1": "@ 2016 Symantec Corporation. All rights reserved.",
+    "footer2": "Terms • Privacy • Careers • Help • "
+
   },
   "ja": {
+    "register_now": "今すぐ登録!",
+    "please": "アカウントを登録するには、このフォームに記入してください。",
+    "required": "全て必須項目です。",
     "first_name": "名",
-    "last_name": "苗字"
+    "last_name": "苗字",
+    "password": "パスワード",
+    "country": "国",
+    "comments": "注釈",
+    "cancel": "キャンセル",
+    "register": "今すぐ登録!",
+    "terms": "私は利用規約に同意します。",
+    "footer1": "ヘルプ• •利用規約•プライバシー•採用情報",
+    "footer2": "2016 Symantec Corporationの@ 。全著作権所有。"
   }
 }

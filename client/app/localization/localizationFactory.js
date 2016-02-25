@@ -1,14 +1,13 @@
 angular.module('regForm')
 
-.factory('localizationFactory', ['$http', function($http){
+.factory('localizationFactory', ['$rootScope', '$http', '$q', function($rootScope, $http, $q){
 
   var currentLanguage = null;
   var allLanguages = {};
 
   function loadLanguage(language) {
     language = language.toLowerCase();
-
-    currentLanguage = allLanguages[language] || allLanguages["en-us"];
+    currentLanguage = allLanguages[language] || allLanguages['en-us'];
 
     if (currentLanguage) {
       return $q(function(resolve){ resolve(currentLanguage); });
@@ -19,22 +18,29 @@ angular.module('regForm')
       url: 'app/localization/translation.json'
     }).then(function successCallback(response) {
       allLanguages = response.data;
-      console.log(allLanguages);
-      currentLanguage = allLanguages[language] || allLanguages["en-us"];
-      return currentLanguage;
+      currentLanguage = allLanguages[language] || allLanguages['en-us'];
+      $rootScope.$broadcast('languageSet');
+      return {allLanguages: allLanguages, currentLanguage: currentLanguage};
     }, function errorCallback(response) {
       console.log('Error reading translation json file');
     });
   }
 
-  function translateJapanese() {
-    console.log('switch to Japanese');
+  function changeLanguage(language) {
+    currentLanguage = allLanguages[language];
+    if (language === 'ja') {
+      $rootScope.$broadcast('japanese');
+    }
+    if (language === 'en-us') {
+      $rootScope.$broadcast('english');
+    }
   }
 
   return {
     currentLanguage: currentLanguage,
     loadLanguage: loadLanguage,
-    translateJapanese: translateJapanese
+    changeLanguage: changeLanguage,
+    allLanguages: allLanguages
   }
 
 }]);
