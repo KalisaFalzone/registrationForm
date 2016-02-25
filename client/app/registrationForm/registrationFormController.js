@@ -9,4 +9,11 @@ angular.module('regForm')
     $scope.currentLanguage = localization;
   });
 
+  $scope.checked = false;
+
+  $scope.switchCheck = function() {
+    console.log('checking/unchecking');
+    $scope.checked = !$scope.checked;
+  }
+
 }]);

@@ -27,9 +27,14 @@ angular.module('regForm')
     });
   }
 
+  function translateJapanese() {
+    console.log('switch to Japanese');
+  }
+
   return {
     currentLanguage: currentLanguage,
-    loadLanguage: loadLanguage
+    loadLanguage: loadLanguage,
+    translateJapanese: translateJapanese
   }
 
 }]);

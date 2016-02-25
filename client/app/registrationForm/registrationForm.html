@@ -1,4 +1,4 @@
-<div class="registration-form-container">
+<div>
   <div class="registerNow">Register Now!</div>
   <div class="instructions">Please fill out this form to register for an account.</div>
   <div class="req">All fields are required.</div>
@@ -7,16 +7,16 @@
   <div class="field-description">{{ currentLanguage.first_name }}</div>
   <form>
       <div class="form-border">
-        <input type="text" placeholder="First Name" ng-model="firstName" class="form-input">
+        <input type="text" placeholder="{{ currentLanguage.first_name }}" class="form-input">
         </input>
       </div>
   </form>
   <br>
 
-  <div class="field-description">Last Name</div>
+  <div class="field-description">{{ currentLanguage.last_name }}</div>
   <form>
       <div class="form-border">
-        <input type="text" placeholder="Last Name" ng-model="firstName" class="form-input">
+        <input type="text" placeholder="{{ currentLanguage.last_name }}" class="form-input">
         </input>
       </div>
   </form>
@@ -25,7 +25,7 @@
   <div class="field-description">Password</div>
   <form>
       <div class="form-border">
-        <input type="text" placeholder="Password" ng-model="firstName" class="form-input">
+        <input type="text" placeholder="Password" class="form-input">
         </input>
       </div>
   </form>
@@ -34,7 +34,7 @@
   <div class="field-description">Country</div>
   <form>
       <div class="form-border">
-        <input type="text" placeholder="USA" ng-model="firstName" class="form-input">
+        <input type="text" placeholder="USA" class="form-input">
         </input>
       </div>
   </form>
@@ -43,28 +43,32 @@
   <div class="field-description">Comments</div>
   <form>
       <div class="form-border">
-        <input type="text" placeholder="Comments" ng-model="firstName" class="form-input">
+        <input type="text" placeholder="Comments" class="form-input">
         </input>
       </div>
   </form>
   <br>
 
 
-  <label class="checkbox-border">
-      <span id="checkbox">
-          <input type='checkbox' />
-      </span>
+  <label class="checkbox-border" ng-click="switchcheck()">
+        <span ng-if="checked"><image class="checkbox-image" src=images/checkbox.png ng-click="switchCheck()"></span>
+        <span ng-if="!checked"><image class="checkbox-image" src=images/unchecked.png ng-click="switchCheck()"></span>
   </label>
       <span class="field-description" id="agree">I agree to the terms and conditions.
       </span>
-
-
-
-
-
   <br>
-  <span class="button-container">
-      <span class="button">Cancel</span>
-      <span class="button">Register</span>
-  </span>
+  <br>
+  <div class="button-container">
+      <span class="button" id="#cancel-button">Cancel</span>
+      <span class="button" id="register-button">Register</span>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>
