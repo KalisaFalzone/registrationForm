@@ -1,0 +1,120 @@
+.container {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+}
+
+/*navbar styling*/
+
+.navbar-container {
+
+}
+
+hr {
+  height: 10px;
+  border: 0;
+  box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.4);
+  padding-left: 0px;
+  margin-left: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+  width: 200%;
+  margin-left: -50%;
+  margin-bottom: 0px;
+}
+
+.Symantec-logo {
+  max-width: 100px;
+  max-height: 50px;
+  padding-left: 20px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+/*registration form styling*/
+
+.registration-form-container {
+  padding: 10%;
+  left: 40%;
+  width: 400px;
+}
+
+.registerNow {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 26.4px;
+  margin-bottom: 5px;
+
+}
+
+.instructions {
+  font-size: 1.0em;
+}
+
+.req {
+  font-size: 1.0em;
+  font-style: italic;
+}
+
+.field-description {
+  font-size: 1.0em;
+}
+
+.form-border {
+  background-color: #F2F2F2;
+  border: 1px solid lightgray;
+}
+
+.form-input {
+  display: block;
+  padding: 1.1em 0 1.1em 1.1em;
+  background-color: #F2F2F2;
+  border-width: 0;
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color:red;
+}
+
+/*checkbox*/
+#checkbox {
+  border-radius: 0px;
+  height: 100px;
+  width: 200px;
+  outline: red;
+}
+
+.checkbox-border {
+  border:1px solid #000;
+}
+
+#agree {
+  padding: 10px;
+}
+
+/*buttons*/
+
+.button-container {
+  float: right;
+  background-color: pink;
+}
+
+.button {
+  background-color: #007BAD;
+  color: #FFF;
+  border: 1px solid blue;
+  font-size: small;
+  font-weight: 400;
+  display: inline-block;
+  width: 75px;
+  height: 18px;
+  text-align: center;
+  padding: 5px;
+  margin: 3px;
+}
+

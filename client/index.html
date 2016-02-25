@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="regForm">
+<head>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+</head>
+<body>
+<div class="container">
+  <navbar></navbar>
+    <ui-view></ui-view>
+  <footer></footer>
+</div>
+
+<!--external libraries-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.1.0/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+<!-- Angular Module -->
+  <script src="app/app.js"></script>
+  <script src="app/config.js"></script>
+
+<!-- Angular Factories -->
+  <script src="app/localization/localizationFactory.js"></script>
+
+<!-- Angular Directives -->
+  <script src="app/navbar/navbarDirective.js"></script>
+  <script src="app/footer/footerDirective.js"></script>
+
+<!-- Angular Controllers -->
+  <script src="app/registrationForm/registrationFormController.js"></script>
+
+</body>
+</html>

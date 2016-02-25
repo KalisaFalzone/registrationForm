@@ -1,0 +1,10 @@
+{
+  "en-us": {
+    "first_name": "First Name",
+    "last_name": "Last Name"
+  },
+  "ja": {
+    "first_name": "名",
+    "last_name": "苗字"
+  }
+}
